@@ -1,0 +1,812 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Tahoma-Bold';
+  src: url("../fonts/Tahoma-Bold.woff") format("woff");
+  src: url("../fonts/Tahoma-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Tahoma';
+  src: url("../fonts/Tahoma.woff") format("woff");
+  src: url("../fonts/Tahoma.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro.woff") format("woff");
+  src: url("../fonts/MyriadPro.woff2") format("woff2");
+}
+@font-face {
+font-family: 'Roboto';
+src: url("../fonts/Roboto.woff") format("woff");
+src: url("../fonts/Roboto.woff2") format("woff2");
+}
+.body {
+  font-family: sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #f1f1f1;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.header-container {
+  color: #202020;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+.logo {
+text-transform: uppercase;
+font-family: 'Tahoma';
+font-size: 14px;
+font-weight: 700;
+}
+.nav-link {
+  color: #202020;
+  text-decoration: none;
+  font-family: 'Tahoma';
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+.login {
+  color: #202020;
+  text-decoration: none;
+  font-family: 'Tahoma';
+  font-size: 14px;
+  font-weight: 400;
+}
+.hero {
+margin-top: 62px;
+margin-bottom: 71px;
+}
+.hero-container {
+  color: #202020;
+display: flex;
+align-items: center;
+max-width: 1140px;
+  margin: auto;
+}
+.all-text {
+  margin-left: 121px;
+  max-width: 522px;
+}
+.name {
+  font-family: 'Tahoma';
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+.title {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-family: 'Tahoma-bold';
+  font-size: 54px;
+  font-weight: 700;
+}
+.subtitle {
+  display: block;
+  font-family: 'Tahoma';
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 450px;
+  margin-bottom: 46px;
+}
+.info {
+  font-family: 'Tahoma';
+  flex-basis: 50%;
+  font-size: 16px;
+  font-weight: 400;
+}
+.info-year {
+  margin-bottom: 16px;
+}
+.purchase {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.price {
+  font-family: 'Tahoma';
+  font-size: 55px;
+  font-weight: 400;
+  margin-right: 97px;
+}
+.heart {
+  display: flex;
+  margin-right: 7px;
+}
+.favorites {
+  font-family: 'Myriad Pro';
+  font-size: 16px;
+  font-weight: 400;
+}
+.button {
+  font-family: 'Tahoma';
+  font-size: 16px;
+  font-weight: 700;
+border-radius: 5px;
+}
+.button-read {
+margin-right: 20px;
+color: #ffffff;
+background-color: #f89c02;
+border: 2px solid #f89c02;
+padding: 20px 50px;
+}
+.button-buy {
+  background-color: #fff;
+  padding: 20px 50px;
+  color: #f89c02;
+  border: 2px solid #f89c02;
+}
+.about {
+  background-color: #f1f1f1;
+}
+.about-container {
+  color: #202020;
+  display: flex;
+  max-width: 1140px;
+    margin: auto;
+    padding: 99px 0;
+  justify-content: space-between;
+}
+.about-book {
+  max-width: 454px;
+  margin-right: 130px;
+}
+.about-title {
+  font-family: 'Tahoma-bold';
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.book-text {
+  font-family: 'Tahoma';
+  font-size: 16px;
+  font-weight: 400;
+}
+.about-author {
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  padding: 68px 53px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  background-color: #ffffff;
+  max-width: 552px;
+}
+.author-avatar {
+margin-right: 21px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.author-bio {
+  align-self: center;
+}
+.author-link {
+  font-family: 'Tahoma';
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+display: block;
+color: #202020;
+}
+.author-text {
+  font-family: 'Tahoma';
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 27px;
+}
+.author-name {
+  font-family: 'Tahoma';
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 14px;
+}
+.readers-container {
+  max-width: 1140px;
+    margin: auto;
+  margin-top: 87px;
+  margin-bottom: 109px;
+}
+.readers-photo {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 57px;
+}
+.people-photo {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  object-fit: cover;
+  width: 165px;
+  height: 165px;
+}
+.people-photo:nth-child(1),
+.people-photo:nth-child(2),
+.people-photo:nth-child(3),
+.people-photo:nth-child(4),
+.people-photo:nth-child(5),
+.people-photo:nth-child(6) {
+margin-top: 0;
+}
+.people-photo:nth-child(7),
+.people-photo:nth-child(8),
+.people-photo:nth-child(9),
+.people-photo:nth-child(10),
+.people-photo:nth-child(11),
+.people-photo:nth-child(12) {
+margin-bottom: 0;
+}
+.readers-title {
+  color: #202020;
+  font-family: 'Tahoma-bold';
+  font-size: 32px;
+  font-weight: 700;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding-top: 60px;
+    padding-bottom: 93px;
+}
+.footer-container {
+  color: #202020;
+  display: flex;
+  flex-wrap: wrap;
+max-width: 1140px;
+margin: auto;
+}
+.footer-title {
+  font-family: 'Tahoma';
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.requisites {
+  margin-right: 166px;
+    padding: 0;
+}
+.information {
+  margin-right: 167px;
+    padding: 0;
+}
+.footer-list>ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+.list-item {
+  font-family: 'Tahoma';
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+}
+.link-item {
+  color:#202020;
+  font-family: 'Tahoma';
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.list-item-1 {
+  font-family: 'Tahoma';
+  font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+    margin-bottom: 0;
+}
+.link-item-1 {
+  font-family: 'Tahoma';
+  color: #202020;
+  text-decoration: none;
+  font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    list-style: none;
+}
+.img {
+  width: 460px;
+    height: 646px;
+    object-fit: cover;
+}
+.img-container {
+  position: relative;
+  margin-top: 62px;
+}
+.sale {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  background-color: #c93535;
+  padding: 13px 18px;
+}
+.sale-text {
+  color:#ffffff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+}
+.return {
+  position: fixed;
+  right: 114px;
+  bottom: 90px;
+  width: 50px;
+  height: 50px;
+  padding: 18px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+}
+@media (max-width: 1200px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 960px;
+    margin: auto;
+  }
+  .img {
+    width: 390px;
+    height: 548px;
+  }
+  .img-container {
+margin-top: 60px;
+margin-bottom: 0;
+  }
+  .all-text {
+    margin-left: 28px;
+  }
+  .about-book {
+    max-width: 367px;
+    margin-right: 52px;
+  }
+  .readers-container {
+    margin-top: 70px;
+    margin-bottom: 95px;
+    max-width: 957px;
+  }
+  .people-photo {
+    width: 140px;
+    height: 140px;
+  }
+  .requisites {
+    margin-right: 115px;
+  }
+  .sale {
+    display: none;
+  }
+    .footer-list>ul {
+      margin-bottom: 0;
+    }
+}
+
+@media (max-width: 992px) {
+.header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  .nav {
+    display: none;
+  }
+  .hero {
+        margin-bottom: 0;
+  }
+  .img {
+    width: 298px;
+    height: 418px;
+        margin-bottom: 0px;
+  }
+  .img-container {
+    width: 298px;
+      height: 418px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  .name {
+    margin-bottom: 13px;
+    font-size: 21px;
+  }
+  .title {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    margin-bottom: 10px;
+  }
+  .info-container {
+    margin-bottom: 36px;
+  }
+  .purchase {
+    margin-bottom: 39px;
+  }
+  .button {
+    font-size: 13px;
+    padding: 14px 40px;
+    text-align: center;
+        margin-bottom: 98px;
+  }
+  .button-read {
+    margin-right: 15px;
+  }
+  .all-text {
+    align-items: center;
+    margin-top: 78px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    margin-bottom: 74px;
+  }
+  .about-title {
+    font-size: 24px;
+  }
+  .about-book {
+    max-width: 760px;
+      margin: auto;
+      margin-bottom: 40px;
+  }
+  .readers-title {
+    margin-bottom: 2px;
+  }
+  .readers-photo {
+    margin-bottom: 80px;
+    margin-top: 57px;
+  }
+  .people-photo {
+    width: 165px;
+    height: 165px;
+  }
+  .people-photo:nth-child(5),
+  .people-photo:nth-child(6),
+  .people-photo:nth-child(11),
+  .people-photo:nth-child(12) {
+    display: none;
+  }
+  .requisites {
+    margin-right: 77px;
+  }
+  .information {
+    margin-right: 70px;
+  }
+  .footer {
+    padding-top: 59px;
+    padding-bottom: 90px;
+  }
+.people-photo:nth-child(1),
+.people-photo:nth-child(2),
+.people-photo:nth-child(3),
+.people-photo:nth-child(4) {
+  margin-top: 0;
+}
+
+.people-photo:nth-child(7),
+.people-photo:nth-child(8),
+.people-photo:nth-child(9),
+.people-photo:nth-child(10) {
+  margin-bottom: 0;
+}
+.footer-list>ul {
+  margin-bottom: 0;
+}
+}
+
+@media (max-width: 768px) {
+  .header-container,
+    .hero-container,
+    .about-container,
+    .readers-container,
+    .footer-container {
+     max-width: 557px;
+     margin: auto;
+    }
+    .return {
+      display: none;
+    }
+    .about-container {
+      padding-top: 80px;
+    }
+    .subtitle {
+      margin-bottom: 28px;
+    }
+    .img {
+      width: 560px;
+        height: 788px;
+      margin-bottom: 0;
+    
+    }
+    .img-container {
+      width: 560px;
+        height: 788px;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+    .hero-container {
+      flex-wrap: wrap;
+    }
+    .all-text {
+      margin-top: 0;
+      margin-left: 0;
+      max-width: 450px;
+    }
+    .price {
+      margin-right: 65px;
+    }
+    .purchase {
+      margin-bottom: 39px;
+    }
+    .buttons {
+      display: flex;
+max-width: 414px;
+      margin-bottom: 0;
+    }
+    .button {
+      margin-bottom: 80px;
+    }
+    .button-read {
+      margin-right: 15px;
+      padding: 15px 40px;
+    }
+    .button-buy {
+      display: block;
+      padding: 15px 50px;
+    }
+    .people-photo:nth-child(4),
+    .people-photo:nth-child(10) {
+      display: none;
+    }
+    .readers-container {
+      margin-top: 80px;
+    }
+    .readers-title {
+      margin-top: 0;
+      margin-bottom: 55px;
+    }
+    .readers-photo {
+      margin-top: 0;
+      margin-bottom: 85px;
+    }
+   .footer {
+    padding-top: 60px;
+    padding-bottom: 80px;
+   }
+   .requisites {
+    margin-right: 75px;
+    margin-bottom: 60px;
+   }
+   .information {
+    margin-right: 0;
+   }
+   .footer-title {
+    margin-bottom: 30px;
+   }
+   .about-title {
+    margin-bottom: 30px;
+   }
+   .about-book {
+    margin-bottom: 70px;
+   }
+.people-photo:nth-child(1),
+.people-photo:nth-child(2),
+.people-photo:nth-child(3) {
+  margin-top: 0;
+}
+.people-photo:nth-child(7),
+.people-photo:nth-child(8),
+.people-photo:nth-child(9) {
+  margin-bottom: 0;
+}
+.footer-list>ul {
+  margin-bottom: 0;
+}
+}
+
+@media (max-width: 576px) {
+  .header-container,
+    .hero-container,
+    .about-container,
+    .readers-container,
+    .footer-container {
+      max-width: 480px;
+      margin: auto;
+    }
+    .img {
+      width: 477px;
+      height: 670px;
+    }
+    .img-container {
+      width: 477px;
+        height: 670px;
+        margin-bottom: 60px;
+    }
+    .name {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .title {
+      font-size: 36px;
+      margin-bottom: 19px;
+    }
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 31px;
+    }
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 36px;
+    }
+    .info-year,
+    .info-format,
+    .info-type {
+margin-bottom: 19px;
+    }
+    .price {
+      margin-right: 28px;
+    }
+    .favorites {
+      display: none;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 65px;
+    }
+    .button-read {
+      margin-bottom: 20px;
+      margin-right: 0;
+      font-size: 16px;
+      padding: 30px 175px;
+    }
+    .button-buy {
+      margin-bottom: 0;
+      font-size: 16px;
+      padding: 30px 175px;
+    }
+    .author-avatar {
+      width: 66px;
+      height: 66px;
+    }
+    .author-link {
+      font-size: 14px;
+    }
+    .author-link>span {
+      display: none;
+    }
+    .author-text {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .about {
+      margin-bottom: 55px;
+    }
+    .people-photo {
+      width: 144px;
+      height: 144px;
+    }
+    .footer-container {
+      flex-direction: column;
+    }
+        .footer-list>ul {
+          margin-bottom: 0;
+        }
+    .requisites,
+    .information {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .header-container,
+      .hero-container,
+      .about-container,
+      .readers-container,
+      .footer-container {
+        max-width: 263px;
+        margin: auto;
+      }
+      .img {
+        width: 263px;
+        height: 370px;
+      }
+      .img-container {
+        margin-top: 50px;
+        margin-bottom: 43px;
+        width: 263px;
+        height: 370px;
+      }
+      .name {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+      .title {
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      .subtitle {
+        font-size: 18px;
+        margin-bottom: 35px;
+      }
+      .info-container {
+        font-size: 14px;
+      }
+      .button {
+        padding: 23px 65px;
+      }
+      .about-book {
+        margin-bottom: 50px;
+      }
+      .book-text:nth-child(4) {
+        display: none;
+      }
+      .book-text:nth-child(3) {
+        margin-bottom: 0;
+      }
+      .about-author {
+        align-items: center;
+        align-self: center;
+        max-width: 266px;
+        padding: 20px 25px 44px 15px;
+      }
+      .author-avatar {
+        margin-right: 12px;
+        margin-bottom: 24px;
+      }
+      .author-name {
+        margin-bottom: 10px;
+      }
+      .author-text {
+        margin-top: 0;
+      }
+      .author-bio {
+        margin-bottom: 25px;
+        align-self: center;
+      }
+      .people-photo {
+        width: 125px;
+        height: 125px;
+      }
+      .people-photo:nth-child(7),
+      .people-photo:nth-child(8) {
+        display: none;
+      }
+      .people-photo:nth-child(9) {
+        margin-top: 0;
+      }
+      .people-photo:nth-child(3) {
+        margin-bottom: 0;
+      }
+      .readers-title {
+        margin-bottom: 35px;
+      }
+      .readers-photo {
+        margin-bottom: 60px;
+      }
+      .footer-list>ul {
+        margin-bottom: 0;
+      }
+  }
